@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 作業 1-5</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<body>
+
+  <a href="https://a080498.github.io/NLNLsunbaby.github.io/dist/index.html">第一杯飲料店訂購網站 點擊前往</h2></a>
+ <div id="head">
+  <title>自我介紹</title>
+  <h1>自我介紹</h1>
+   </div>
+  <hr>
+  </hr>
+<div id="left">
+  <p><b>生機二 陳奕翔</B></p>
+  <p>我是陳奕翔 </p>
+     <p>興趣:</p>
+     <p>1.玩傳說對決</p>
+  <img src=https://play-lh.googleusercontent.com/GNqQdERj6GyyMzZTqw_oLV_A9rPUF8eKumZADiyWPxC8clSsoTC4vSYHTnpNwkM24Q style=width:100px;height:100px;>
+     <p>2.玩APEX Legend</p>
+  <img src=https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg?t=1677523686
+style=width:300px;height:200px;>       
+     <p>平時沒事喜歡聽歌</p>
+  </div> 
+   
+<div id="center"> 
+     <p>這邊放上我傳說對決的名片 歡迎大家加我好友一起玩</p>
+ <img src= https://cdn.discordapp.com/attachments/833328791669047317/1082671595505582210/IMG_7476.png
+style=width:540px;height:300px;>
+ <img src= https://cdn.discordapp.com/attachments/833328791669047317/1082671620826595368/IMG_7477.png
+style=width:540px;height:300px;>
+ <h1>輸入你的哀低</h1>
+  
+      
+  
+      <label for="comment">你的哀低:</label>
+      <textarea id="comment"></textarea><br>
+  
+      <button onclick="addComment()">發送</button>
+  
+      <div id="comments-section"></div> 
+</div> 
+
+<div id="right">
+     <table border = "1"> 
+       <p>我想不到表格可以放什麼</p>
+       <p>於是我把我傳說對決喜歡用的角色與我比較常玩的遊戲做排名</p>
+    <tr>
+     <th></th>
+     <th>一</th>
+     <th>二</th>
+     <th>三</th>
+     <th>四</th>
+     <th>五</th>
+    </tr>
+    <tr>
+     <th>傳說對決中喜歡用的角色(近期)</th>
+     <th>刀鋒寶貝</th>
+     <th>拉茲</th>
+     <th>筱清</th>
+     <th>小丑</th>
+     <th>蘇</th>
+    </tr>
+    <tr>
+     <th>喜歡玩的遊戲(近期)</th>
+     <th>傳說對決</th>
+     <th>薑餅人王國</th>
+     <th>APEX Legend</th>
+     <th>原神</th>
+     <th>英雄聯盟</th>
+    </tr>
+   </div>
+  
+ <script>
+   <label for="name">名稱：</label>
+      <input type="text" id="name"><br>
+  
+      <label for="comment">留言內容：</label>
+      <textarea id="comment"></textarea><br>
+  
+      <button onclick="addComment()">新增留言</button>
+    function addComment() {
+      // 取得輸入的名稱和留言內容
+      var name = document.getElementById("name").value;
+      var comment = document.getElementById("comment").value;
+
+      // 建立新的留言元素
+      var newComment = document.createElement("div");
+      newComment.className = "comment";
+
+      // 建立名稱元素
+      var nameElement = document.createElement("h4");
+      nameElement.innerText = name;
+      
+      // 建立留言內容元素
+      var commentElement = document.createElement("p");
+      commentElement.innerText = comment;
+
+      // 將名稱和留言內容元素加入留言元素
+      newComment.appendChild(nameElement);
+      newComment.appendChild(commentElement);
+
+      // 將留言元素加入留言區域
+      var commentsSection = document.getElementById("comments-section");
+      commentsSection.appendChild(newComment);
+
+      // 清空輸入欄位
+      document.getElementById("name").value = "";
+      document.getElementById("comment").value = "";
+    }
+  </script>     
+       
+ <title>新增留言</title>
+  <style>
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+    }
+  </style>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
